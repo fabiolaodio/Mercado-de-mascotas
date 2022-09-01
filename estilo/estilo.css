@@ -482,7 +482,7 @@ ESTILOS DEL RECETARIO
 
 footer{
     display: grid;
-  
+    
     grid-template-areas: "footer-about footer-blog footer-products footer-spacewhite footer-socialmedia"
                         " footer-linea footer-linea footer-linea footer-linea footer-linea"
                         " footer-datarights footer-datarights footer-datarights footer-datarights footer-datarights";
@@ -490,12 +490,12 @@ footer{
     grid-template-columns: repeat(5,1fr);
     margin: 0px;
     margin-top: 30px;
-    padding: 50px;
+    
     font-size: 18px;
     font-family: 'Arima', cursive;
     font-family: 'Edu QLD Beginner', cursive;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     background-color: var(--color-footer);
     
     
@@ -526,21 +526,25 @@ hr{
 
 .footer-about{
     grid-area:footer-about ; 
-    margin-bottom: 30px;
+    margin: 10px;
 }
 .footer-blog{
     grid-area:footer-blog ;  
+    margin: 10px;
 }
 .footer-products{
     grid-area:footer-products ;  
+    margin: 10px;
 }
 
 .footer-spacewhite{
     grid-area:footer-spacewhite ;
+    margin: 10px;
 }
 .footer-socialmedia{
     grid-area:footer-socialmedia ;
     text-align: center;
+    margin: 10px;
     
 }
 
@@ -728,7 +732,8 @@ hr{
     background-color: var(--input-background);
     border-radius: 20px;
     height: 55px;
-    width: 400px;
+    width: auto;
+    min-width: 200px;
     display: flex;
     align-items: center;
     justify-content:flex-start;
@@ -1178,9 +1183,12 @@ hr{
     position: absolute;
     right: 0;
     background-color: white;
-    top: 84px;
+    top: 86px;
     height: 100vh;
+    border-radius: 40px;
+    box-shadow: 0 .25rem .375rem -.0625rem #1414141f,0 .125rem .25rem -.0625rem #14141412!important;
 }
+
 
 .section--return{
     display: flex;
