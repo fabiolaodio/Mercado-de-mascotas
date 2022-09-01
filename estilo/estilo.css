@@ -5,6 +5,11 @@ html {
 body{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;
+    width: 100vw;
+}
+
+.none{
+    display: none;
 }
 
 :root{
@@ -91,6 +96,7 @@ ESTILOS DEL RECETARIO
 .search-img img{
     width: 45px;
     height: 45px;
+    padding: 10px;
     
     
 }
@@ -535,12 +541,17 @@ hr{
 .footer-socialmedia{
     grid-area:footer-socialmedia ;
     text-align: center;
+    
 }
 
 .section-icon{
     display: flex;
     justify-content: space-between;
     margin: 0px 30px;
+    
+}
+.section-icon a{
+    padding: 5px;
 }
 .footer-linea{
     grid-area: footer-linea;
@@ -1277,6 +1288,16 @@ hr{
 
 @media screen and (max-width: 900px) {
 
+
+    footer{
+        grid-template-areas: "footer-about footer-blog footer-products  footer-socialmedia"
+                            " footer-linea  footer-linea footer-linea footer-linea"
+                            " footer-datarights footer-datarights footer-datarights footer-datarights";
+        grid-template-columns: repeat(4,1fr); 
+        font-size: small;                   
+                            
+        }
+    
     .title p{
         font-size: 1.3rem;
     }
@@ -1310,6 +1331,13 @@ hr{
     }
 }
 @media screen and (max-width: 640px) {
+
+    .none{
+        display: block;
+    }
+    .none1{
+        display: none;
+    }
     .menu--desktop{
         display: none;
     }

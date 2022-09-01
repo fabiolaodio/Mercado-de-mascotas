@@ -9,6 +9,8 @@ const menuShopping=document.querySelector('.shopping'); // aside-curso
 
 const contenedorProducts=document.querySelector('.main--container--products');
 
+
+
 // captura de la descripcion del producto.
 
 
